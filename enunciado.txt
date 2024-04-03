@@ -1,0 +1,24 @@
+En un juego de mesa, cada jugador tiene una cantidad de vida (inicialmente 100 puntos, que es el máximo que pueden tener los jugadores), una cantidad de escudo (inicialmente
+0 puntos, y un máximo de la mitad del tope de puntos de vida, es decir, 50) y una mano de cartas (inicialmente ninguna).
+El juego funciona a turnos. Cuando le toca a un jugador, roba una carta del mazo y la incorpora a su mano. Acto seguido, puede elegir entre pasar turno o usar una de sus cart
+as.
+Las cartas tienen una serie de puntos anotados. Hay 3 tipos de carta. Dependiendo del tipo, sus puntos afectan de una forma u otra:
+
+Cartas de ataque: quitan vida a un jugador, tanta como indiquen sus puntos anotados. Si el objetivo tiene escudo, entonces primero reduce puntos del mismo.
+
+Cartas de curación: suman vida a un jugador, tanta como indiquen sus puntos anotados.
+
+Cartas de escudo: suman escudo a un jugador, tanta como indiquen sus puntos anotados.
+
+Cuando se usa una carta, el usuario elige cara o cruz. Después, se lanza una moneda. Si el usuario acierta el resultado, la carta surte efecto. Si no, no. Haga efecto o no, l
+a carta usada se desecha (vuelve al mazo en una posición aleatoria del mismo).
+Emula una partida de dos jugadores, empleando orientación a objetos, encapsulación de los datos, colecciones de objetos (ArrayList) y control de errores de entrada (el usuari
+o introduce algo que no le pedimos). El juego acaba cuando alguno de ellos se queda a 0 de vida.
+ACLARACIONES
+
+Junto con el código fuente, debéis adjuntar un diagrama UML de clases (el que habéis visto en Entornos de Desarrollo y repasamos en clase). No tiene por qué ser complejo, per
+o sí debe transmitir la manera en la que habéis organizado la información (clases, atributos y métodos).
+Se tendrá en cuenta la optimización, es decir, el código legible, que siga la nomenclatura camel case de Java, y que no tenga warnings como "variable inutilizada" u otros sim
+ilares. Por otro lado, el código no debe contener errores gramaticales (los que impiden que compile, es decir, los que el propio editor subraya en rojo).
+La práctica será defendida, por lo que el alumno debe preocuparse de entender lo que ha entregado y saber explicarlo de manera concisa, manejando los posibles valores de las
+variables, los bucles, las llamadas entre objetos, etc. Una defensa negativa baja mucho la calificación, pudiendo llegar al suspenso.
